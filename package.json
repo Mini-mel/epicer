@@ -1,0 +1,24 @@
+{
+  "name": "epicer",
+  "version": "1.0.0",
+  "description": "practice recipe app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage",
+    "e2e": "cypress open"
+  },
+  "proxy": "http://localhost:3000",
+  "author": "Minimel",
+  "license": "ISC",
+  "dependencies": {
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "cypress": "^7.4.0",
+    "jest": "^27.0.4"
+  }
+}

@@ -1,0 +1,77 @@
+body{
+    background-color: #191c20;
+}
+
+/* nav */
+nav {
+    background-color: #2B2F36;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 20px 32px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #DDE0E4;
+    letter-spacing: .05em;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0 25px 0 0;
+}
+
+.nav-site-title{
+    font-size: 24px;
+}
+
+
+nav div a{
+    border-radius: 1.2em;
+    font-size: 16px;
+    padding: 9px 13px 9px 13px;
+    border: .15em solid #de7e4a;
+    margin: 5px;
+}
+
+.nav-login{
+    background-color: transparent;
+    color: #de7e4a;
+}
+
+.nav-signup{
+    background-color: #de7e4a;
+    color: #303030;
+}
+
+.nav-center{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-hamburger{
+    fill: #DDE0E4;
+    display: block;
+}
+
+.nav-hamburger-check{
+    
+}
+
+@media(min-width: 810px){
+    .nav-hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 810px){
+    .nav-center, .nav-login, .nav-signup{
+        display: none;
+    }
+    
+    .nav-hamburger-check input:checked{
+        
+    }
+}
