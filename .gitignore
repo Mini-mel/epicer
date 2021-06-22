@@ -6,7 +6,7 @@ cypress/videos
 cypress/screenshots
 cypress.env.json
 coverage.data
-coverage/
+coverage
 
 #--------MacOS---------
 
