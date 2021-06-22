@@ -5,6 +5,8 @@ node_modules
 cypress/videos
 cypress/screenshots
 cypress.env.json
+coverage.data
+coverage/
 
 #--------MacOS---------
 
