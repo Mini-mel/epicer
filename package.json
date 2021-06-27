@@ -13,6 +13,7 @@
   "dependencies": {
     "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
+    "mongoose": "^5.12.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
