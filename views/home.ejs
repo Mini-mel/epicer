@@ -15,7 +15,15 @@
     <%-include('./partials/navbar.ejs')%>
     <main>
         <% for(let recipe of recipes) {%>
-        <%=recipe.title%>
+        <div class=card>
+            <img src="<%=recipe.image%>">
+            <div class=card-content>
+                <div class=card-title><%=recipe.title%></div>
+                <p>
+                    <%=recipe.summary.substring(0, 345)%>...
+                </p>
+            </div>
+        </div>
         <%}%>
     </main>
 </body>
