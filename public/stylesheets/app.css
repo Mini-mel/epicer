@@ -2,6 +2,10 @@ body{
     background-color: #191c20;
 }
 
+main{
+    margin: 5px;
+}
+
 /* nav */
 nav {
     background-color: #2B2F36;
@@ -29,7 +33,7 @@ nav a{
 
 
 nav div a{
-    border-radius: 1.2em;
+    border-radius: 16px;
     font-size: 16px;
     padding: 9px 13px 9px 13px;
     border: .15em solid #de7e4a;

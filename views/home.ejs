@@ -13,6 +13,11 @@
 
 <body>
     <%-include('./partials/navbar.ejs')%>
+    <main>
+        <% for(let recipe of recipes) {%>
+        <%=recipe.title%>
+        <%}%>
+    </main>
 </body>
 
 </html>

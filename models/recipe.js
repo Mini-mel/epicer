@@ -9,7 +9,7 @@ const RecipeSchema = new Schema({
     ingredients: [
         {
             name: String,
-            amount: Float32Array
+            amount: Number
         }
     ]
 });
