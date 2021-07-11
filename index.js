@@ -28,13 +28,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public'))); //for serving static files like css
 
 //--------Routes--------
-app.get('/', async (req, res) => {
+app.get('/recipes', async (req, res) => {
     const recipes = await Recipe.find({})
     res.render("home.ejs", { recipes });
 })
 
-app.get('/favorites', (req, res) => {
-    res.render("favs.ejs");
+app.get('/recipes/:id', async (req, res) => {
+    const { id } = req.params;
+    const recipe = await Recipe.findById(id);
+    res.render('recipes/show', { recipe });
 })
 
 //turns the server on for port 3000
