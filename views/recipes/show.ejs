@@ -2,9 +2,24 @@
 <main>
     <div class=show-card>
         <div class="show-card-content">
+            <img src="<%=recipe.image %>">
             <div class="show-card-title">
                 <%=recipe.title%>
             </div>
+            <div>
+                <%=recipe.summary%>
+            </div>
+            <div>
+                <%Object.entries(recipe.ingredients).forEach((ingredient) => {%>
+                <%=ingredient[1].name%>
+                <%=ingredient[1].amount%>
+                <br>
+                <%})%>
+            </div>
+            <div>
+                <%=recipe.instructions%>
+            </div>
+
 
         </div>
     </div>
