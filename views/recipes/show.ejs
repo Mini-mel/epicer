@@ -1,22 +1,22 @@
 <%layout("layouts/boilerplate.ejs")%>
-<main>
-    <div class=show-card>
-        <div class="show-card-content">
-            <img src="<%=recipe.image %>">
-            <div class="show-card-title">
+<main class="show-main">
+    <div class="show-card">
+        <img src="<%=recipe.image %>">
+        <div class="show-content">
+
+            <div class="show-title">
                 <%=recipe.title%>
             </div>
-            <div>
-                <%=recipe.summary%>
+
+            <div class="show-ingredients">
+                <ul>
+                    <%Object.entries(recipe.ingredients).forEach((ingredient) => {%>
+                    <!--TODO: add measurement after amount - cup tbsp tsp etc.-->
+                    <li><b><%=ingredient[1].amount%> </b> <%=ingredient[1].name%></li>
+                    <%})%>
+                </ul>
             </div>
-            <div>
-                <%Object.entries(recipe.ingredients).forEach((ingredient) => {%>
-                <%=ingredient[1].name%>
-                <%=ingredient[1].amount%>
-                <br>
-                <%})%>
-            </div>
-            <div>
+            <div class="show-section">
                 <%=recipe.instructions%>
             </div>
 

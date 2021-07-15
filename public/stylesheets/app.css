@@ -53,12 +53,16 @@ main{
 }
 
 /*show cards*/
+.show-main {
+    margin: 2% 30%;
+}
+
 .show-card {
     /*TODO: media queries involving flex: wrap*/
     display: flex;
     align-items: center;
-    flex: wrap;
-
+    flex-wrap: wrap;
+    
     background-color: #4F555F;
     color: #EEF1F4;
     font-family: sans-serif;
@@ -68,18 +72,31 @@ main{
 }
 
 .show-card img {
-    border-radius: 16px; /*TODO: different radius corners for mobile version cards*/
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    min-width: 100%;
 }
 
-.show-card-content {
+.show-content {
     padding: 24px;
-    margin: 16px 0;
-    line-height: 1.3;
+    margin: 16px;
+
 }
 
-.show-card-title {
-    margin: 16px 0;
+.show-title {
     font-size: 24px;
+    text-align: center;
+}
+
+.show-section {
+    padding: 24px;
+    line-height: 1.4;
+}
+
+.show-ingredients {
+    padding: 24px;
+    line-height: 2;
+    font-size: 16px;
 }
 
 /* nav */
