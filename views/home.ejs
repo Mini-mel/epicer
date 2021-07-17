@@ -6,7 +6,7 @@
         <div class=card-content>
             <div class=card-title><%=recipe.title%></div>
             <p>
-                <%=recipe.summary.substring(0, 150)%>...
+                <%=recipe.summary ? recipe.summary.substring(0, 150) : ""%>...
             </p>
 
             <a href="/recipes/<%=recipe._id%>" class=card-link>View Recipe</a>
