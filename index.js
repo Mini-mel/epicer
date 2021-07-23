@@ -26,11 +26,22 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public'))); //for serving static files like css
+app.use(express.urlencoded({ extended: true })) //needs to parse req.body for post requests
 
 //--------Routes--------
 app.get('/recipes', async (req, res) => {
     const recipes = await Recipe.find({})
     res.render("home.ejs", { recipes });
+})
+
+app.get('/recipes/new', (req, res) => {
+    res.render("recipes/new");
+})
+
+app.post('/recipes', async (req, res) => {
+    const recipe = new Recipe(req.body.recipe);
+    await recipe.save();
+    res.redirect(`recipes/${recipe._id}`);
 })
 
 app.get('/recipes/:id', async (req, res) => {
