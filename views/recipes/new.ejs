@@ -1,0 +1,19 @@
+<%layout("layouts/boilerplate");%>
+<form action="/recipes" method="POST">
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="recipe[title]">
+    </div>
+
+    <div>
+        <label for="instructions">Instructions</label>
+        <input type="text" id="instructions" name="recipe[instructions]">
+    </div>
+
+    <div>
+        <label for="image">Image Url</label>
+        <input type="url" id="image" name="recipe[image]">
+    </div>
+
+    <button>Submit</button>
+</form>
