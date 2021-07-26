@@ -1,19 +1,23 @@
 <%layout("layouts/boilerplate");%>
-<form action="/recipes" method="POST">
-    <div>
-        <label for="title">Title</label>
-        <input type="text" id="title" name="recipe[title]" required>
-    </div>
+<main class="show-main">
+    <div class="show-card">
+        <form class="show-content" action="/recipes" method="POST">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="recipe[title]" required>
+            </div>
 
-    <div>
-        <label for="instructions">Instructions</label>
-        <input type="text" id="instructions" name="recipe[instructions]" required>
-    </div>
+            <div>
+                <label for="instructions">Instructions</label>
+                <input type="text" id="instructions" name="recipe[instructions]" required>
+            </div>
 
-    <div>
-        <label for="image">Image Url</label>
-        <input type="url" id="image" name="recipe[image]" required>
-    </div>
+            <div>
+                <label for="image">Image Url</label>
+                <input type="url" id="image" name="recipe[image]" required>
+            </div>
 
-    <button>Submit</button>
-</form>
+            <button>Submit</button>
+        </form>
+    </div>
+</main>
