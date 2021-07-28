@@ -44,6 +44,8 @@ describe("NavLogIn", () => {
     it("tests the navbar for broken links", () => {
         cy.visit("http://localhost:3000/")
 
+        cy.get('nav').contains('Log In').should('be.visible')
+
         cy.get('[data-cy=navLogIn]').click()
 
         cy.url().should('include', '/login')
@@ -54,8 +56,12 @@ describe("NavSignUp", () => {
     it("tests the navbar for broken links", () => {
         cy.visit("http://localhost:3000/")
 
+        cy.get('nav').contains('Sign Up').should('be.visible')
+
         cy.get('[data-cy=navSignUp]').click()
 
         cy.url().should('include', '/register')
     })
 })
+
+//TODO: Use cy.viewport to test mobile/hamburger menu
