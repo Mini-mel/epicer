@@ -11,7 +11,6 @@
             <div class="show-ingredients">
                 <ul>
                     <%Object.entries(recipe.ingredients).forEach((ingredient) => {%>
-                    <!--TODO: add measurement after amount - cup tbsp tsp etc.-->
                     <li><b><%=ingredient[1].amount%> <%=ingredient[1].unit%></b> <%=ingredient[1].name%></li>
                     <%})%>
                 </ul>
