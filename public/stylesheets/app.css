@@ -5,6 +5,12 @@ body{
 main{
     margin: 0 20% 0 20%; /* TODO: make side margins go away in mobile (media queries)*/
 }
+
+h1{
+    margin: 8px 0 16px 0;
+    font-size: 24px;
+}
+
 /* recipe cards */
 .card {
     /*TODO: media queries involving flex: wrap*/
@@ -134,6 +140,16 @@ input[type="text"] {
     padding: 1
 }
 
+.form-content button {
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 7px 10px;
+    border: .15em solid #de7e4a;
+    margin: 5px;
+    background-color: #de7e4a;
+    color: #303030;
+}
+
 /* nav */
 nav {
     background-color: #2B2F36;
@@ -210,13 +226,13 @@ nav div a{
 /* footer */
 footer {
     background-color: #2B2F36;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     box-sizing: border-box;
     padding: 70px;
+    
     color: #b1b1b1;
     font-family: sans-serif;
     font-size: 16px;
