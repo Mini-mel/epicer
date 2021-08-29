@@ -1,9 +1,13 @@
 body{
     background-color: #191c20;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main{
     margin: 0 20% 0 20%; /* TODO: make side margins go away in mobile (media queries)*/
+    flex: 1;
 }
 
 h1{
@@ -234,10 +238,11 @@ footer {
     background-color: #2B2F36;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     box-sizing: border-box;
     padding: 70px;
+    align-content: flex-end;
     
     color: #b1b1b1;
     font-family: sans-serif;
