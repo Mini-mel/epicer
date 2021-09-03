@@ -18,7 +18,16 @@
                 <input type="url" id="image" name="recipe[image]" aria-label="image url" required>
             </div>
 
+            <div class="form-field">
+                <label for="ingredients">Ingredients</label><br>
+                <button type="button" class="addFieldButton" id="addFieldButton" onclick="addField();">Add
+                    Ingredient</button>
+                <input type="text" id="ingredients" name="recipe[ingredients.name]" aria-label="ingredients" required>
+            </div>
+
             <div class="center-button"><button>Submit</button></div>
         </form>
     </div>
 </main>
+
+<script src="/scripts/addField.js"></script>
