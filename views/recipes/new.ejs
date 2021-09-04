@@ -5,12 +5,13 @@
             <h1>Add New Recipe</h1>
             <div class="form-field">
                 <label for="title">Title</label><br>
-                <input type="text" id="title" name="recipe[title]" aria-label="title" required>
+                <input type="text" id="title" class="not-ingredients" name="recipe[title]" aria-label="title" required>
             </div>
 
             <div class="form-field">
                 <label for="instructions">Instructions</label><br>
-                <input type="text" id="instructions" name="recipe[instructions]" aria-label="instructions" required>
+                <input type="text" id="instructions" class="not-ingredients" name="recipe[instructions]"
+                    aria-label="instructions" required>
             </div>
 
             <div class="form-field">
@@ -19,13 +20,30 @@
             </div>
 
             <div class="form-field">
+                <button type="button" class="add-field-button" id="addFieldButton" onclick="addField();">Add
+                    Ingredient</button><br>
                 <label for="ingredients">Ingredients</label><br>
-                <button type="button" class="addFieldButton" id="addFieldButton" onclick="addField();">Add
-                    Ingredient</button>
-                <input type="text" id="ingredients" name="recipe[ingredients.name]" aria-label="ingredients" required>
-            </div>
 
-            <div class="center-button"><button>Submit</button></div>
+                <div id="add-field-div">
+                    <!--                    <div id="ingredient-line">
+                        <input type="text" class="ingredients" id="ingredients" name="recipe[ingredients[0].name]"
+                            aria-label="ingredient" required>
+                        <input type="number" value="1" min="0.1" max="100" step="0.1"
+                            name="recipe[ingredients[0].amount]" aria-label="number of ingredient">
+                        <select name="recipe[ingredients[0].unit]" aria-label="units of measurement">
+                            <option></option>
+                            <option>To taste</option>
+                            <option>cup(s)</option>
+                            <option>tsp(s)</option>
+                            <option>tbsp(s)</option>
+                            <option>gallon(s)</option>
+                            <option>quart(s)</option>
+                        </select>
+                    </div>
+                </div> -->
+                </div>
+
+                <button class="center-button">Submit</button>
         </form>
     </div>
 </main>

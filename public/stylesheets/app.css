@@ -132,33 +132,57 @@ h1{
 }
 
 .form-field{
-    margin: 12px;
+    margin-bottom: 10px;
     padding: 20px;
+}
+
+.added-field{
+    margin-bottom: 12px;
 }
 
 label {
     color: #DDE0E4;
 }
 
-input[type="text"], input[type="url"]{
+.not-ingredients, input[type="url"]{
     width: 100%;
     box-sizing: border-box;
+}
+
+input[type="number"]{
+    min-width: 15%;
+    max-width: 15%;
+}
+
+.ingredient{
+    max-width: 55%;
+}
+
+.form-content button {
+    border-radius: 16px;
+    border: .15em solid #de7e4a;
+    margin: 5px 5px 15px 5px;
 }
 
 .center-button {
     text-align: center;
     box-sizing: border-box;
-}
-
-.form-content button {
-    border-radius: 16px;
-    font-size: 16px;
-    padding: 7px 10px;
-    border: .15em solid #de7e4a;
-    margin: 5px 5px 15px 5px;
     background-color: #de7e4a;
     color: #303030;
+    
+    font-size: 24px;
+    padding: 18px;
+    width: 100%;
 }
+
+.add-field-button {
+    background-color: #2B2F36;
+    color: #de7e4a;
+    padding: 7px 10px;
+    font-size: 16px;
+}
+
+
 
 /* nav */
 nav {
