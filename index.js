@@ -38,12 +38,6 @@ app.get('/recipes/new', (req, res) => {
     res.render("recipes/new");
 })
 
-app.post('/recipes', async (req, res) => {
-    const recipe = new Recipe(req.body.recipe);
-    await recipe.save();
-    res.redirect(`recipes/${recipe._id}`);
-})
-
 app.get('/recipes/:id', async (req, res) => {
     const { id } = req.params;
     const recipe = await Recipe.findById(id);

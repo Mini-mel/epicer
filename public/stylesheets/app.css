@@ -63,6 +63,23 @@ h1{
     color: #303030;
 }
 
+@media(min-width: 810px){
+    .nav-hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 810px){
+    .nav-center{
+        display: none;
+    }
+    
+    .nav-hamburger-check input:checked{
+        
+    }
+}
+
+
 /*show cards*/
 .show-main {
     margin: 2% 30%;
@@ -110,80 +127,6 @@ h1{
     font-size: 16px;
 }
 
-/* forms */
-.form-main{
-    margin: 5% 30%;
-}
-
-.form-card{
-    /*TODO: media queries involving flex: wrap*/
-    
-    background-color: #4F555F;
-    color: #EEF1F4;
-    font-family: sans-serif;
-    font-size: 14px;
-    border-radius: 16px;
-    margin: 1% 25%;
-}
-
-.form-content {
-    padding: 24px;
-    margin: 16px;
-}
-
-.form-field{
-    margin-bottom: 10px;
-    padding: 20px;
-}
-
-.added-field{
-    margin-bottom: 12px;
-}
-
-label {
-    color: #DDE0E4;
-}
-
-.not-ingredients, input[type="url"]{
-    width: 100%;
-    box-sizing: border-box;
-}
-
-input[type="number"]{
-    min-width: 15%;
-    max-width: 15%;
-}
-
-.ingredient{
-    max-width: 55%;
-}
-
-.form-content button {
-    border-radius: 16px;
-    border: .15em solid #de7e4a;
-    margin: 5px 5px 15px 5px;
-}
-
-.center-button {
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #de7e4a;
-    color: #303030;
-    
-    font-size: 24px;
-    padding: 18px;
-    width: 100%;
-}
-
-.add-field-button {
-    background-color: #2B2F36;
-    color: #de7e4a;
-    padding: 7px 10px;
-    font-size: 16px;
-}
-
-
-
 /* nav */
 nav {
     background-color: #2B2F36;
@@ -208,53 +151,18 @@ nav a{
     font-size: 24px;
 }
 
-
-nav div a{
+.get-more{
+    border: .15em solid #de7e4a;
     border-radius: 16px;
     font-size: 16px;
     padding: 10px;
-    border: .15em solid #de7e4a;
     margin: 5px;
 }
 
-.nav-login{
-    background-color: transparent;
-    color: #de7e4a;
-}
-
-.nav-signup{
-    background-color: #de7e4a;
-    color: #303030;
-}
 
 .nav-center{
     display: flex;
     flex-wrap: nowrap;
-}
-
-.nav-hamburger{
-    fill: #DDE0E4;
-    display: block;
-}
-
-.nav-hamburger-check{
-    
-}
-
-@media(min-width: 810px){
-    .nav-hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 810px){
-    .nav-center, .nav-login, .nav-signup{
-        display: none;
-    }
-    
-    .nav-hamburger-check input:checked{
-        
-    }
 }
 
 /* footer */
