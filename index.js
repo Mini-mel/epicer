@@ -8,9 +8,7 @@ const Recipe = require("./models/recipe");
 //--------Connect to Database--------
 mongoose.connect("mongodb://localhost:27017/epicer", {
   useNewUrlParser: true,
-  useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
 });
 
 const db = mongoose.connection;
