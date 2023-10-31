@@ -49,6 +49,11 @@ app.get("/recipes/:id", async (req, res) => {
   res.render("recipes/show", { recipe });
 });
 
+app.get("/recipes/:id/edit", async (req, res) => {
+  const recipe = await Recipe.findById(req.params.id);
+  res.render("recipes/edit", { recipe });
+});
+
 app.get("/", (req, res) => {
   res.redirect("/recipes");
 });
