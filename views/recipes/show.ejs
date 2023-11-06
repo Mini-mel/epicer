@@ -1,7 +1,7 @@
 <%layout("layouts/boilerplate.ejs")%>
 <main class="show-main">
     <div class="show-card">
-        <img src="<%=recipe.image %>">
+        <img src="<%=recipe.image%>">
         <div class="show-content">
 
             <div class="show-title">
@@ -11,7 +11,7 @@
             <div class="show-ingredients">
                 <ul>
                     <%Object.entries(recipe.ingredients).forEach((ingredient) => {%>
-                    <li><b><%=ingredient[1].amount%> <%=ingredient[1].unit%></b> <%=ingredient[1].name%></li>
+                    <li><%=ingredient[1].name%></li>
                     <%})%>
                 </ul>
             </div>
@@ -19,7 +19,7 @@
                 <%=recipe.instructions%>
             </div>
 
-
+            <a href="/recipes/<%=recipe._id%>/edit" class=card-link data-cy="editRecipe">Edit Recipe</a>
         </div>
     </div>
 </main>
